@@ -742,7 +742,6 @@ module riscv_iommu #(
             .AxiIdWidth   (ID_WIDTH           ),
             .axi_req_t    (axi_req_t          ),
             .axi_resp_t   (axi_rsp_t          ),
-            .Resp         (axi_pkg::RESP_OKAY ),  // this slave responds with OKAY to continue MRIF transactions
             .RespWidth    (DATA_WIDTH         ),  // data response width, gets zero extended or truncated to r.data.
             .RespData     (64'h0              ),  // return zero for reads
             .ATOPs        (1'b1),                 // Activate support for ATOPs.
